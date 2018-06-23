@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="background: #efefef">
+    <div class="header">
+        <div class="container clearfix">
+            <div class="logo-box">
+                <img class="logo" src="images/logo.png" alt="">
+                <h1>源计划</h1>
+            </div>
+            <ul class="header-nav">
+                <li class="nav-item">
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="knowledge.html">知识体系</a>
+                </li>
+                <li class="nav-item">
+                    <a href="article.html">文章</a>
+                </li>
+                <li class="nav-item">
+                    <a href="write.html">写文章</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="center">
+            <h2>欢迎回到猿计划</h2>
+            <form class="center-form">
+                <input id="mobile" type="text" placeholder="请输入登录手机号" autocomplete="on">
+                <input id="pwd_1" type="password" placeholder="6-16位密码，区分大小写，不能使用空格" autocomplete="on">
+                <div class="form-act">
+                    <input id="autoLog" type="checkbox" checked>
+                    <label for="autoLog">下次自动登录</label>
+                    <p class="form-link">
+                        <a class="forget" href="#">忘记密码</a>
+                        <a class="reg" href="register.html">立即注册</a>
+                    </p>
+                </div>
+                <input class="button" id="loginBtn" type="button" value="登 录">
+            </form>
+        </div>
+    </div>
+    <div class="response"></div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

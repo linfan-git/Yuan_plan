@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>写文章</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container clearfix">
+            <div class="logo-box">
+                <img class="logo" src="images/logo.png" alt="">
+                <h1>源计划</h1>
+            </div>
+            <ul class="header-nav">
+                <li class="nav-item">
+                    <a href="user/myInfo.html">未读消息</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="knowledge.html">知识体系</a>
+                </li>
+                <li class="nav-item">
+                    <a href="article.html">文章</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="#">写文章</a>
+                </li>
+                <li class="mycenter">
+                    <a href="#" class="user-pic"><img src="images/icon/user.png" alt=""></a>
+                    <ul class="mycenter-nav">
+                        <li>
+                            <a href="user/userInfo.html">个人中心</a>
+                        </li>
+                        <li>
+                            <a href="user/resetpwd.html">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="user/mynote.html">我的帖子</a>
+                        </li>
+                        <li>
+                            <a href="user/mycollection.html">我的收藏</a>
+                        </li>
+                        <li>
+                            <a href="login.html">退出</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="artical-type clearfix">
+                <div class="item">
+                    <label for="title">文章标题</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="item">
+                    <label for="type">所属分类</label>
+                    <select name="type" id="type">
+                        <option value="0" selected>其它分享</option>
+                        <option value="1">经验分享</option>
+                        <option value="2">入门学习</option>
+                        <option value="3">成果分享</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label for="techType">技术分类</label>
+                    <select name="tech-type" id="techType">
+                        <option value="1" selected>html</option>
+                        <option value="2">php</option>
+                        <option value="3">java</option>
+                    </select>
+                </div>
+            </div>
+            <div id="editor">
+                <textarea :value="input" @input="update"></textarea>
+                <div v-html="compiledMarkdown" id="preview"></div>
+            </div>
+            <div class="artical-issue">
+                <button class="issue-button">发 布</button>
+            </div>
+        </div>
+    </div>
+    <div class="response"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://unpkg.com/lodash@4.16.0"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/write.js"></script>
+</body>
+</html>

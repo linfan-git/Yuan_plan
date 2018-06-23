@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container clearfix">
+            <div class="logo-box">
+                <img class="logo" src="images/logo.png" alt="">
+                <h1>源计划</h1>
+            </div>
+            <ul class="header-nav">
+                <li class="nav-item">
+                    <a href="user/myInfo.html">未读消息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="knowledge.html">知识体系</a>
+                </li>
+                <li class="nav-item">
+                    <a href="article.html">文章</a>
+                </li>
+                <li class="nav-item">
+                    <a href="write.html">写文章</a>
+                </li>
+                <li class="mycenter">
+                    <a href="#" class="user-pic"><img src="images/icon/user.png" alt=""></a>
+                    <ul class="mycenter-nav">
+                        <li>
+                            <a href="user/userInfo.html">个人中心</a>
+                        </li>
+                        <li>
+                            <a href="user/resetpwd.html">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="user/mynote.html">我的帖子</a>
+                        </li>
+                        <li>
+                            <a href="user/mycollection.html">我的收藏</a>
+                        </li>
+                        <li>
+                            <a href="login.html">退出</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="banner" id="banner_1">
+                <div class="pic-box" style="left: 0;">
+                    <a href="#"><img src="images/banner-1.jpg" alt=""></a>
+                    <a href="#"><img src="images/banner-2.jpg" alt=""></a>
+                    <a href="#"><img src="images/banner-3.jpg" alt=""></a>
+                </div>
+                <div class="btn-bar">
+                    <span index="1" class="on"></span>
+                    <span index="2"></span>
+                    <span index="3"></span>
+                </div>
+                <span class="arrow" id="prev">&lt;</span>
+                <span class="arrow" id="next">&gt;</span>
+            </div>
+            <div class="artical">
+                <div class="artical-nav clearfix">
+                    <a href="#" class="nav-item active">所有文章</a>
+                    <a href="#" class="nav-item">html</a>
+                    <a href="#" class="nav-item">php</a>
+                    <a href="#" class="nav-item">java</a>
+                </div>
+                <div class="post-wrapper">
+                    <!--<div class="artical-post">
+                        <div class="artical-author">
+                            <span class="author"></span>·
+                            <span class="time"></span>
+                        </div>
+                        <div class="artical-title clearfix">
+                            <span class="title"></span>
+                            <div class="handle-info">
+                                <a href="#" class="comment-icon"></a>
+                                <span class="comment"></span>
+                                <a href="#" class="like-icon"></a>
+                                <span class="like"></span>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="page-list">
+                <ul>
+                    <li class="page_li">
+                        <button class="page_btn" style="width:100px" id="prePage">上一页</button>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" id="page_btn1">1</button>
+                    </li>
+                    <li class="page_li">
+                        <span class="pages_span" id="prePoint">...</span>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" id="page_btn2"></button>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" id="page_btn3"></button>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" id="page_btn4"></button>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" id="page_btn5"></button>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" id="page_btn6"></button>
+                    </li>
+                    <li class="page_li">
+                        <span class="pages_span" id="sufPoint">...</span>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" id="page_btn7"></button>
+                    </li>
+                    <li class="page_li">
+                        <button class="page_btn" style="width:100px" id="sufPage">下一页</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="response"></div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container clearfix">
+            <div class="logo-box">
+                <img class="logo" src="../images/logo.png" alt="">
+                <h1>源计划</h1>
+            </div>
+            <ul class="header-nav">
+                <li class="nav-item">
+                    <a class="active" href="myInfo.html">未读消息</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../knowledge.html">知识体系</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../article.html">文章</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../write.html">写文章</a>
+                </li>
+                <li class="mycenter">
+                    <a href="#" class="user-pic"><img src="../images/icon/user.png" alt=""></a>
+                    <ul class="mycenter-nav">
+                        <li>
+                            <a href="#">个人中心</a>
+                        </li>
+                        <li>
+                            <a href="resetpwd.html">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="mynote.html">我的帖子</a>
+                        </li>
+                        <li>
+                            <a href="mycollection.html">我的收藏</a>
+                        </li>
+                        <li>
+                            <a href="../login.html">退出</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="side">
+                <a class="side-tab-item active" href="#">我的信息</a>
+                <a class="side-tab-item" href="resetpwd.html">修改密码</a>
+                <a class="side-tab-item" href="mynote.html">我的帖子</a>
+                <a class="side-tab-item" href="mycollection.html">我的收藏</a>
+                <a class="side-tab-item" href="myInfo.html">我的消息</a>
+            </div>
+            <div class="content">
+                <div class="content-title">
+                    <h2>个人信息</h2>
+                </div>
+                <div class="user-photo item">
+                    <img src="../images/icon/user.png" alt="">
+                    <div class="reset-photo">
+                        <span>更换头像</span>
+                        <input type="file" class="upload-img">
+                    </div>
+                </div>
+                <div class="user-phone item">
+                    <label for="phone">注册手机号</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="user-name item">
+                    <label for="name">昵称</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="user-sex item">
+                    <label>性别</label>
+                    <div>
+                        <label for="male">男 </label><input id="male" type="radio" name="sex" value="男">
+                        <label for="female">女 </label><input id="female" type="radio" name="sex" value="女">
+                    </div>
+                </div>
+                <div class="item">
+                    <button type="button" id="submit">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
